@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+         
+        <meta charset="utf-8">
+        <title>Predicción de Rindes por Evapotraspiración</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="static/css/style.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]
+        <link rel="shortcut icon" href="http://www.bootply.com/bootstrap/img/favicon.ico">
+        <link rel="apple-touch-icon" href="http://www.bootply.com/bootstrap/img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="http://www.bootply.com/bootstrap/img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="http://www.bootply.com/bootstrap/img/apple-touch-icon-114x114.png"> -->
+        
+        <!--Static files-->
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.resize.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.pie.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.fillbetween.min.js"></script>
+        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/flot/0.8.2/jquery.flot.time.min.js"></script>
+        <script type="text/javascript" src="static/js/jquery.flot.axislabels.js"></script>
+        <script type="text/javascript" src="static/js/front.js"></script>
+        <script type='text/javascript' src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+        <style>
+              #map_canvas {
+                    width: 430px;
+                    height: 350px;
+                          }
+          </style> 
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+
+        <script type="text/javascript" src="static/js/mymap.js"></script>
+
+        </head>
+  <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container-full">
+          <div class="navbar-header"><h3>Predicción de Biomasa por Evapotraspiración</h3></div>
+        </div>
+    </div>
+    <!-- Begin page content -->
+    <div class="container-full" style="padding-top: 55px;">
+        <div class="row">
+            <div class="col-md-4">
+              <div id="map_canvas"></div>
+             </div>
+            <div class="col-md-8">
+              <div class="row">
+                <h4 class="text-center">Evolucion de la Biomasa</h4>
+                  <div id="chart1" class="big-chart" contenteditable="false"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+               
+                  <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                      Ultimos Valores
+                    </div>
+                    <div class="panel-body target text-center" id="lasts" >
+                    </div>
+               
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+</body></html>
