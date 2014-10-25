@@ -5,7 +5,6 @@
         grid:{borderColor:'#ccc'},
         series:{shadowSize:0},
         yaxis:{
-               tickSize: 0.1,
                //tickFormatter: function(val, axis) { return val;},
                axisLabel: "Biomasa"
               },
