@@ -17,6 +17,15 @@ function buildshape(coords, map, color, title){
 }
 
 function graph(event){
+      if (this.title=="lote1"){
+        $("#rend").text("Real: 4.6 NDVI: 3.9, ET:3.6")
+      };
+      if (this.title=="lote2"){
+        $("#rend").text("Real: 4.72 NDVI: 3, ET:4.3")
+      }
+      if (this.title=="lote3"){
+        $("#rend").text("Real: 5.49 NDVI: 3.1, ET:4.4")
+      }
   $.ajax({
     url: "static/data/" + this.title + ".json",
     dataType: "json",
